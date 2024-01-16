@@ -64,5 +64,6 @@ img {
     h2 {
         /* h2を右に120pxずらす */
         left: 120px;
+ 　　　　display: inline-block;
     }
 }
