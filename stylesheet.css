@@ -32,20 +32,19 @@ img {
 }
 
 h2 {
-    position: relative;
+    position: relative; /* 相対指定 */
     font-size: 1.23rem;
     font-weight: normal;
     letter-spacing: 2px;
 }
-h2::after {
-    position: absolute;
+h2::before {
+    position: absolute; /* 絶対指定 */
     content: "";
-    width: 90px;
-    height: 1px;
-    left: -120px;
-    top: 50%;
+    top: 50%;     /* h2の上から50%の位置 */
+    width: 90px;  /* 横線の幅 */
+    height: 1px;  /* 横線の高さ */
+    left: -120px; /* h2要素の左から-120px左へずらす */
     background: #676767;
-
 }
 
 p {
@@ -59,7 +58,6 @@ p {
 img {
     width: 800px;
 }
-
 /* レスポンシブ・ブレークポイント1100px
 ------------------------------- */
 @media screen and (max-width:1100px) {
